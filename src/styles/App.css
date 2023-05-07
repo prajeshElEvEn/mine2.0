@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+.main-container {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .nav-container {
   padding: 1rem;
 }
@@ -21,8 +29,70 @@
   align-items: center;
   gap: 0.5rem;
 }
+.nav-container .nav .nav-item span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.nav-container .nav .nav-item img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
 .nav-container .nav .nav-item-btn {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: 0.8rem;
+  background: #1C1C1C;
+  color: #ebebeb;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.nav-container .nav .nav-item-btn:hover {
+  transform: translateY(-0.2rem);
+}
+.nav-container .nav .nav-item-v {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+.nav-container .nav .nav-item-v:hover {
+  transform: translateY(-0.5rem);
+}
+.nav-container .nav .nav-item-v .sub-text {
+  font-size: 0.8rem;
+}
+.nav-container .nav .nav-item-v .text {
+  font-size: 1rem;
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 0;
+}
+.heading-container .heading {
+  font-family: "Abril Fatface", cursive;
+  font-size: 8rem;
+}
+
+.container-box {
+  padding: 0 6rem;
+}
+.container-box .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-box .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-box .item img {
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=App.css.map */

@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import DownloadSvg from '../assets/svgs/download.svg'
+import Logo from '../assets/images/logo1080.png'
 
 const HomeNav = () => {
     return (
@@ -10,16 +12,17 @@ const HomeNav = () => {
                     <span>collaboration and work</span>
                 </div>
                 <Link to={'/'} className='nav-item'>
-                    {/* <img src={} alt=''/> */}
+                    <img src={Logo} alt='' />
                     <span>
                         eleven Co.
                     </span>
                 </Link>
-                <Link to={'/'} className='nav-item-btn'>
+                <a href='/' className='nav-item-btn'>
+                    <img src={DownloadSvg} alt='' />
                     <span>
                         Download Resume
                     </span>
-                </Link>
+                </a>
             </div>
         </div>
     )
