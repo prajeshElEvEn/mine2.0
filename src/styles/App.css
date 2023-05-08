@@ -61,10 +61,10 @@
   transform: translateY(-0.5rem);
 }
 .nav-container .nav .nav-item-v .sub-text {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 .nav-container .nav .nav-item-v .text {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .heading-container {
@@ -79,7 +79,7 @@
 }
 
 .container-box {
-  padding: 0 6rem;
+  padding: 0 8rem;
 }
 .container-box .container {
   display: flex;
@@ -90,6 +90,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-weight: 600;
 }
 .container-box .item img {
   width: 400px;
