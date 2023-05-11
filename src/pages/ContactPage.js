@@ -5,7 +5,7 @@ const ContactPage = () => {
     return (
         <>
             <Heading
-                text={'Contact Me'}
+                text={"Let's Connect and make something Awesome together!"}
             />
         </>
     )

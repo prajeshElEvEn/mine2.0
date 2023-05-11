@@ -75,7 +75,8 @@
 }
 .heading-container .heading {
   font-family: "Abril Fatface", cursive;
-  font-size: 8rem;
+  font-size: 6rem;
+  text-align: center;
 }
 
 .container-box {
