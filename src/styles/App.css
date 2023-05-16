@@ -151,16 +151,15 @@
 .container-box .container .card-container .card-box .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .card {
-  width: 24%;
+  width: 22%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #dadada;
-  border-radius: 10px;
+  gap: 0.5rem;
 }
 .card img {
   height: 250px;
@@ -169,10 +168,9 @@
      object-fit: cover;
 }
 .card .card-body {
-  padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .card .card-body .title {
   font-size: 1.2rem;
@@ -182,7 +180,6 @@
   color: #868686;
 }
 .card a {
-  padding: 0 1rem 1rem 1rem;
   text-decoration: none;
   color: #1C1C1C;
   display: flex;
