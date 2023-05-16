@@ -134,4 +134,61 @@
   width: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.container-box .container .card-container {
+  width: 100%;
+}
+.container-box .container .card-container .card-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.container-box .container .card-container .card-box .heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.container-box .container .card-container .card-box .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+}
+.card img {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card .card-body .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.card .card-body .description {
+  color: #868686;
+}
+.card a {
+  padding: 0 1rem 1rem 1rem;
+  text-decoration: none;
+  color: #1C1C1C;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.card a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=App.css.map */

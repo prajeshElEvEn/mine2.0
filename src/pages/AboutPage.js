@@ -5,7 +5,7 @@ const AboutPage = () => {
     return (
         <>
             <Heading
-                text={'Get to know me better!'}
+                text={'Get to know me Better!'}
             />
         </>
     )
