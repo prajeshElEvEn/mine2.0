@@ -100,7 +100,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  font-weight: 900;
 }
 .container-box .container .item img {
   width: 400px;
@@ -147,6 +149,7 @@
 .container-box .container .card-container .card-box .heading {
   font-size: 2rem;
   font-weight: 600;
+  font-family: "Abril Fatface", cursive;
 }
 .container-box .container .card-container .card-box .cards {
   display: flex;
@@ -181,6 +184,8 @@
   font-weight: 600;
 }
 .card .card-body .description {
+  font-size: 1.2rem;
+  font-family: "Cormorant Garamond", serif;
   color: #868686;
 }
 .card a {
@@ -193,6 +198,32 @@
 }
 .card a:hover {
   text-decoration: underline;
+}
+
+.about .about-container .row {
+  display: flex;
+}
+.about .about-container .row img {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about .about-container .row .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about .about-container .row .text h1 {
+  font-size: 7rem;
+  font-family: "Sora", sans-serif;
+  color: gray;
+}
+.about .about-container .row .text h1 i {
+  color: #1C1C1C;
+}
+.about .about-container .row .text h1 span {
+  color: #1C1C1C;
 }
 
 .menu {
