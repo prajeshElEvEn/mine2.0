@@ -7,6 +7,7 @@ const AboutPage = () => {
             <Heading
                 text={'Get to know me Better!'}
             />
+
         </>
     )
 }
