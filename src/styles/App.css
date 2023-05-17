@@ -68,6 +68,7 @@
 .nav-container .nav .nav-item-v:hover {
   transform: translateY(-0.5rem);
   background: #dadada;
+  font-weight: 600;
 }
 .nav-container .nav .nav-item-v .sub-text {
   font-size: 0.8rem;
@@ -163,9 +164,12 @@
   flex-direction: column;
   justify-content: space-between;
   transition: all 0.3s ease;
+  border: 1px solid #dadada;
+  border-radius: 10px;
 }
 .card:hover {
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  transform: translateY(-0.2rem);
+  background: #dadada;
 }
 .card img {
   height: 250px;
@@ -209,13 +213,15 @@
      object-fit: cover;
 }
 .about .about-container .row .text {
+  padding: 0 1rem;
   width: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
 }
 .about .about-container .row .text h1 {
-  font-size: 7rem;
+  font-size: 4rem;
   font-family: "Sora", sans-serif;
   color: gray;
 }

@@ -58,6 +58,7 @@
             &:hover
                 transform: translateY(-0.5rem)
                 background: $color-tertiary
+                font-weight: 600
             .sub-text
                 font-size: 0.8rem
             .text
@@ -141,10 +142,15 @@
     justify-content: space-between
     // border: 1px solid $color-tertiary
     transition: all 0.3s ease
-    // border: 1px solid $color-primary
+    border: 1px solid $color-tertiary
+    border-radius: 10px
+    // background: $color-secondary
+    // color: $color-primary
     &:hover
+        transform: translateY(-0.2rem)
+        background: $color-tertiary
         // border: 1px solid $color-tertiary
-        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px
+        // box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px
     img
         height: 250px
         width: 100%
@@ -179,13 +185,14 @@
                 width: 50%
                 object-fit: cover
             .text
-                // padding: 0 1rem
+                padding: 0 1rem
                 width: 50%
                 display: flex
                 flex-direction: column
+                justify-content: center
                 gap: 1rem
                 h1
-                    font-size: 7rem
+                    font-size: 4rem
                     font-family: $font
                     color: gray
                     i
