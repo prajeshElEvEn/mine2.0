@@ -1,5 +1,4 @@
 import React from 'react'
-import ProjectImage from '../assets/images/project.png'
 
 const Card = ({ title, desc, link, image, date }) => {
     return (
@@ -23,7 +22,10 @@ const Card = ({ title, desc, link, image, date }) => {
                             </svg>
                         </a>
                         <div className="date">
-                            {date}
+                            <svg width="18" height="18" fill="#1c1c1c" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 2.625a.625.625 0 0 0-1.25 0v.625H4.5A2.5 2.5 0 0 0 2 5.75V7h20V5.75a2.5 2.5 0 0 0-2.5-2.5h-1.25v-.625a.625.625 0 1 0-1.25 0v.625H7v-.625ZM22 19.5V8.25H2V19.5A2.5 2.5 0 0 0 4.5 22h15a2.5 2.5 0 0 0 2.5-2.5Zm-4.375-8.75h1.25a.624.624 0 0 1 .625.625v1.25a.624.624 0 0 1-.625.625h-1.25a.624.624 0 0 1-.625-.625v-1.25a.624.624 0 0 1 .625-.625Z"></path>
+                            </svg>
+                            <span>{date}</span>
                         </div>
                     </div>
                 )

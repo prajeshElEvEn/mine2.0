@@ -232,6 +232,12 @@
 .card .btn-group a:hover {
   text-decoration: underline;
 }
+.card .btn-group .date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .about .about-container .row {
   display: flex;
 }
