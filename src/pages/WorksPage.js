@@ -3,13 +3,16 @@ import Heading from '../components/Heading'
 import Card from '../components/Card'
 import Menu from '../components/Menu'
 
-const WorksPage = () => {
+const WorksPage = ({ user }) => {
     return (
         <>
             <Heading
                 text={'My Works'}
             />
             <div className="container-box">
+                <div className="btn">
+                    Add
+                </div>
                 <div className="container">
                     <div className="card-container">
                         <div className="card-box">

@@ -169,7 +169,6 @@
 }
 .card:hover {
   transform: translateY(-0.2rem);
-  background: #dadada;
 }
 .card img {
   height: 250px;
