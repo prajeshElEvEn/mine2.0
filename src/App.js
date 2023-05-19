@@ -15,6 +15,7 @@ import { useEffect } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase/config';
 import AddProject from './pages/AddProject';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const user = useSelector(selectUser)
@@ -43,6 +44,7 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/add" element={<AddProject />} />
       </Routes>
+      <ScrollToTop />
       <ToastContainer />
     </>
   );
