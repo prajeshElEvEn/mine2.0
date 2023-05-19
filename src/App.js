@@ -14,6 +14,7 @@ import { login, logout, selectUser } from './features/user/userSlice';
 import { useEffect } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase/config';
+import AddProject from './pages/AddProject';
 
 function App() {
   const user = useSelector(selectUser)
@@ -40,6 +41,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/add" element={<AddProject />} />
       </Routes>
       <ToastContainer />
     </>

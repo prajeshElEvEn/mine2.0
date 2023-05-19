@@ -61,14 +61,14 @@ const RegisterPage = () => {
                         className="btn"
                         onClick={handleLogin}
                     >
-                        Login
+                        <span>Login</span>
                     </button>
-                    <button
+                    {/* <button
                         className="btn-reg"
                         onClick={handleRegister}
                     >
-                        Register
-                    </button>
+                        <span>Register</span>
+                    </button> */}
                 </div>
             </form>
         </div>
