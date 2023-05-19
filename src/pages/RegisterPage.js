@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const RegisterPage = () => {
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
     const handleLogin = (e) => {
         e.preventDefault()
     }
@@ -14,12 +17,16 @@ const RegisterPage = () => {
                     <input
                         type="text"
                         placeholder="example@email.com"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                     />
                 </div>
                 <div className="form-field">
                     <input
                         type="password"
                         placeholder="Password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
                     />
                 </div>
                 <div className="btn-group">
