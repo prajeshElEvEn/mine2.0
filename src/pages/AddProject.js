@@ -1,11 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { getDownloadURL, ref as refStorage, uploadBytes } from 'firebase/storage'
+import { db, storage } from '../firebase/config'
+import { v4 } from 'uuid'
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
+import { toast } from 'react-toastify'
 
 const AddProject = () => {
+    const [title, setTitle] = useState('')
+    const [description, setDescription] = useState('')
+    const [image, setImage] = useState(null)
+    const [date, setDate] = useState('')
+
     const nav = useNavigate()
-    const handleAdd = (e) => {
+    const handleAdd = async (e) => {
         e.preventDefault()
+        const imageRef = refStorage(storage, `project_images/${image.name + v4()}`)
+        await uploadBytes(imageRef, image)
+            .then(() => {
+                getDownloadURL(imageRef)
+                    .then((url) => (
+                        addDoc(collection(db, "projects"), {
+                            title: title,
+                            description: description,
+                            date: date,
+                            image: url,
+                            timestamp: serverTimestamp()
+                        })
+                    ))
+                setImage(null)
+                // toast.success('Image added successfully!')
+            })
+            .catch(error => {
+                toast.error(error.message)
+            })
     }
+
     const handleBack = (e) => {
         e.preventDefault()
         nav('/works')
@@ -17,6 +47,21 @@ const AddProject = () => {
                     <input
                         type="text"
                         placeholder="Project Title"
+                        value={title}
+                        onChange={(e) => setTitle(e.target.value)}
+                    />
+                </div>
+                <div className="form-field">
+                    <input
+                        type="file"
+                        onChange={(e) => setImage(e.target.files[0])}
+                    />
+                </div>
+                <div className="form-field">
+                    <input
+                        type="date"
+                        value={date}
+                        onChange={(e) => setDate(e.target.value)}
                     />
                 </div>
                 <div className="form-field">
@@ -24,10 +69,9 @@ const AddProject = () => {
                         type="text"
                         placeholder="Project Description"
                         rows={6}
+                        value={description}
+                        onChange={(e) => setDescription(e.target.value)}
                     />
-                </div>
-                <div className="form-field">
-                    <input type="file" />
                 </div>
                 <div className="btn-group">
                     <button
