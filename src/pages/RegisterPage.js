@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux'
 import { login } from '../features/user/userSlice'
 import { toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 const RegisterPage = () => {
     const [email, setEmail] = useState('')
