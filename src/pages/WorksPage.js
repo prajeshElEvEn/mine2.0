@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Heading from '../components/Heading'
 import Card from '../components/Card'
 import Menu from '../components/Menu'
 import { useNavigate } from 'react-router-dom'
+import { collection, onSnapshot, orderBy, query } from 'firebase/firestore'
+import { db } from '../firebase/config'
 
 const WorksPage = ({ user }) => {
+
+    const [projects, setProjects] = useState()
+
     const nav = useNavigate()
+
+    useEffect(() => {
+        const projectRef = collection(db, "projects")
+        const projectQuery = query(projectRef, orderBy("date", "desc"))
+        onSnapshot(projectQuery, (snapshot) => {
+            setProjects(snapshot.docs.map((doc) => ({
+                id: doc.id,
+                data: doc.data()
+            })))
+        })
+    }, [])
+
     return (
         <>
             <Heading
@@ -30,41 +47,22 @@ const WorksPage = ({ user }) => {
                 <div className="container">
                     <div className="card-container">
                         <div className="card-box">
-                            <div className="heading">
+                            {/* <div className="heading">
                                 2023
-                            </div>
+                            </div> */}
                             <div className="cards">
-                                <Card
-                                    image={""}
-                                    title={'Project Title'}
-                                    desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'}
-                                    link={'/'}
-                                />
-                                <Card
-                                    title={'Project Title'}
-                                    desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'}
-                                    link={'/'}
-                                />
-                                <Card
-                                    title={'Project Title'}
-                                    desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'}
-                                    link={'/'}
-                                />
-                                <Card
-                                    title={'Project Title'}
-                                    desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'}
-                                    link={'/'}
-                                />
-                                <Card
-                                    title={'Project Title'}
-                                    desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'}
-                                    link={'/'}
-                                />
-                                <Card
-                                    title={'Project Title'}
-                                    desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'}
-                                    link={'/'}
-                                />
+                                {
+                                    projects && projects.map((project) => (
+                                        <Card
+                                            key={project.id}
+                                            image={project.data.image}
+                                            title={project.data.title}
+                                            desc={project.data.description}
+                                            link={project.data.projectUrl}
+                                            date={project.data.date}
+                                        />
+                                    ))
+                                }
                             </div>
                         </div>
                     </div>

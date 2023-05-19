@@ -80,6 +80,7 @@
     flex-direction: column
     align-items: center
     justify-content: center
+    width: 100%
     .btn
         display: flex
         align-items: center
@@ -91,10 +92,12 @@
         border-radius: 50px
         cursor: pointer
         transition: all 0.3s ease
+        margin-bottom: 1rem
         &:hover
             transform: translateY(-0.2rem)
     // background: #000
     .container
+        width: 100%
         display: flex
         align-items: center
         justify-content: space-evenly
@@ -158,15 +161,15 @@
     display: flex
     flex-direction: column
     justify-content: space-between
-    align-items: flex-start
+    // align-items: flex-start
     // border: 1px solid $color-tertiary
     transition: all 0.3s ease
     // border: 1px solid $color-tertiary
     // border-radius: 10px
     // background: $color-secondary
     // color: $color-primary
-    background: $color-secondary
-    color: $color-primary
+    // background: $color-secondary
+    // color: $color-primary
     &:hover
         transform: translateY(-0.2rem)
         // background: $color-tertiary
@@ -187,22 +190,27 @@
         .description
             font-size: 1.2rem
             font-family: $font-body
-            color: #868686
-    a
+    .btn-group
         display: flex
         align-items: center
-        gap: 0.5rem
-        font-size: 0.8rem
-        // background: $color-primary
-        color: $color-primary
-        padding: 0.5rem 1rem
-        // border-radius: 50px
-        cursor: pointer
-        transition: all 0.3s ease
-        margin: 1rem 0
-        text-decoration: none
-        &:hover
-            text-decoration: underline
+        justify-content: space-between
+        a
+            display: flex
+            align-items: center
+            gap: 0.5rem
+            font-size: 0.8rem
+            background: $color-secondary
+            color: $color-primary
+            padding: 0.5rem 1rem
+            border-radius: 50px
+            cursor: pointer
+            transition: all 0.3s ease
+            margin: 1rem 0
+            text-decoration: none
+            &:hover
+                text-decoration: underline
+        .date
+            // font-size: 0.8rem
 
 .about
     .about-container
