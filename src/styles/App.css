@@ -386,10 +386,10 @@
     padding: 1rem;
   }
   .card .card-body .title {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .card .card-body .description {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .card .btn-group {
     padding: 0 1rem;
