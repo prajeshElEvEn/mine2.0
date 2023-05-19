@@ -37,6 +37,7 @@ const RegisterPage = () => {
                 toast.error(error.message)
             })
     }
+
     return (
         <div className="form-container">
             <form>
