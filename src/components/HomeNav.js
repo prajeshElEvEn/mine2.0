@@ -17,7 +17,12 @@ const HomeNav = () => {
                         eleven Co.
                     </span>
                 </Link>
-                <a href='/' className='nav-item-btn'>
+                <a
+                    href='https://drive.google.com/file/d/1-AozeKH2jgWkch4hVoPVYbpbHkO055ly/view?usp=sharing'
+                    target='_blank'
+                    rel='noreferrer'
+                    className='nav-item-btn'
+                >
                     <img src={DownloadSvg} alt='' />
                     <span>
                         Download Resume

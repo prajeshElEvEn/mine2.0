@@ -18,31 +18,31 @@ const ContactPage = () => {
                 <div className="container">
                     <div className="left">
                         <div className="col">
-                            <a href="/" target="_blank" rel="noopener noreferrer">
+                            <a href="mailto:prajesh.eleven118@gmail.com" target="_blank" rel="noopener noreferrer">
                                 <img src={EmailSvg} alt="" />
                                 <span>prajesh.eleven118@gmail.com</span>
                             </a>
-                            <a href="/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/prajesh-eleven/" target="_blank" rel="noopener noreferrer">
                                 <img src={LinkedinSvg} alt="" />
-                                <span>/prajesh</span>
+                                <span>/prajesh-eleven</span>
                             </a>
-                            <a href="/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/prajeshElEvEn" target="_blank" rel="noopener noreferrer">
                                 <img src={GithubSvg} alt="" />
                                 <span>/prajeshElEvEn</span>
                             </a>
                         </div>
                         <div className="col">
-                            <a href="/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://twitter.com/prajeshElEvEn" target="_blank" rel="noopener noreferrer">
                                 <img src={TwitterSvg} alt="" />
-                                <span>/prajesheleven</span>
+                                <span>/prajeshElEvEn</span>
                             </a>
-                            <a href="/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/prajesheleven/" target="_blank" rel="noopener noreferrer">
                                 <img src={InstagramSvg} alt="" />
                                 <span>/prajesheleven</span>
                             </a>
                             <a href="/" target="_blank" rel="noopener noreferrer">
                                 <img src={DiscordSvg} alt="" />
-                                <span>prajesheleven#0000</span>
+                                <span>/prajeshElEvEn#0000</span>
                             </a>
                         </div>
                     </div>
