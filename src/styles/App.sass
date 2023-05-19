@@ -75,7 +75,7 @@
         text-align: center
 
 .container-box
-    padding: 0 1rem
+    // padding: 0 1rem
     display: flex
     flex-direction: column
     align-items: center
@@ -259,12 +259,14 @@
             border-radius: 10px
             // background: $color-secondary
             input
+                width: 100%
                 border: none
                 outline: none
                 font-size: 1rem
                 font-family: $font
                 background: transparent
             textarea
+                width: 100%
                 border: none
                 outline: none
                 font-size: 1rem
@@ -317,10 +319,17 @@
                 width: 100%
                 flex-direction: column
                 .col
+                    a
+                        // background: $color-secondary
 
             .right
                 img
                     width: 100%
+            .card-container
+                // padding: 0
+                .card-box
+                    .cards
+                        flex-direction: column
 
     .about
         .about-container
@@ -333,3 +342,38 @@
                     padding: 1rem 0
                     h1
                         font-size: 2rem
+    .card
+        width: 100%
+        img
+            height: auto
+        .card-body
+            padding: 1rem
+            .title
+                font-size: 1rem
+            .description
+                font-size: 1rem
+        .btn-group
+            // flex-direction: column
+            padding: 0 1rem
+            a
+                margin: 0
+                padding: 0.5rem
+                font-size: 0.8rem
+            .date
+                font-size: 0.8rem
+    .menu
+        padding: 4rem 0
+    .form-container
+        width: 96%
+        margin: 0 auto
+        // padding: 4rem 1rem
+        // padding: 2rem 0
+        .form-field
+            // padding: 0.5rem
+            // width: 100%
+            input
+                width: 100%
+                // font-size: 1rem
+            textarea
+                width: 100%
+                // font-size: 1rem

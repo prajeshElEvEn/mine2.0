@@ -90,7 +90,6 @@
 }
 
 .container-box {
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -289,6 +288,7 @@
   border-radius: 10px;
 }
 .form-container form .form-field input {
+  width: 100%;
   border: none;
   outline: none;
   font-size: 1rem;
@@ -296,6 +296,7 @@
   background: transparent;
 }
 .form-container form .form-field textarea {
+  width: 100%;
   border: none;
   outline: none;
   font-size: 1rem;
@@ -359,6 +360,9 @@
   .container-box .container .right img {
     width: 100%;
   }
+  .container-box .container .card-container .card-box .cards {
+    flex-direction: column;
+  }
   .about .about-container .row {
     flex-direction: column;
   }
@@ -371,5 +375,44 @@
   }
   .about .about-container .row .text h1 {
     font-size: 2rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .card img {
+    height: auto;
+  }
+  .card .card-body {
+    padding: 1rem;
+  }
+  .card .card-body .title {
+    font-size: 1rem;
+  }
+  .card .card-body .description {
+    font-size: 1rem;
+  }
+  .card .btn-group {
+    padding: 0 1rem;
+  }
+  .card .btn-group a {
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .card .btn-group .date {
+    font-size: 0.8rem;
+  }
+  .menu {
+    padding: 4rem 0;
+  }
+  .form-container {
+    width: 96%;
+    margin: 0 auto;
+  }
+  .form-container .form-field input {
+    width: 100%;
+  }
+  .form-container .form-field textarea {
+    width: 100%;
   }
 }/*# sourceMappingURL=App.css.map */
