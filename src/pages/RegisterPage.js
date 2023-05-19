@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth'
 import React, { useState } from 'react'
 import { auth, db } from '../firebase/config'
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
@@ -16,6 +16,18 @@ const RegisterPage = () => {
 
     const handleLogin = (e) => {
         e.preventDefault()
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                dispatch(login({
+                    email: userCredential.user.email,
+                    uid: userCredential.user.uid,
+                }))
+                toast.success('Logged In successfully!')
+                nav('/works')
+            })
+            .catch((error) => {
+                toast.error(error.message)
+            })
     }
     const handleRegister = (e) => {
         e.preventDefault()

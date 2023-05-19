@@ -409,10 +409,13 @@
     width: 96%;
     margin: 0 auto;
   }
-  .form-container .form-field input {
+  .form-container form {
     width: 100%;
   }
-  .form-container .form-field textarea {
+  .form-container form .form-field input {
+    width: 100%;
+  }
+  .form-container form .form-field textarea {
     width: 100%;
   }
 }/*# sourceMappingURL=App.css.map */
