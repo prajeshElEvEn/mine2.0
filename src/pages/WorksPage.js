@@ -18,6 +18,7 @@ const WorksPage = () => {
                             </div>
                             <div className="cards">
                                 <Card
+                                    image={""}
                                     title={'Project Title'}
                                     desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'}
                                     link={'/'}

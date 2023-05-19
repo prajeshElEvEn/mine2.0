@@ -6,6 +6,7 @@ import WorksPage from './pages/WorksPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import HomeNav from './components/HomeNav';
+import RegisterPage from './pages/RegisterPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/works" element={<WorksPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/register" element={<RegisterPage />} />
       </Routes>
     </>
   );

@@ -7,10 +7,10 @@ const HomeNav = () => {
     return (
         <div className='nav-container'>
             <div className='nav'>
-                <div to={'/'} className='nav-item-column'>
+                <Link to={'/register'} className='nav-item-column'>
                     <span>Open for any</span>
                     <span>collaboration and work</span>
-                </div>
+                </Link>
                 <Link to={'/'} className='nav-item'>
                     <img src={Logo} alt='' />
                     <span>
