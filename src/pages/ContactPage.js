@@ -40,9 +40,9 @@ const ContactPage = () => {
                                 <img src={InstagramSvg} alt="" />
                                 <span>/prajesheleven</span>
                             </a>
-                            <a href="/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://discordapp.com/users/1109158283492733068" target="_blank" rel="noopener noreferrer">
                                 <img src={DiscordSvg} alt="" />
-                                <span>/prajeshElEvEn#0000</span>
+                                <span>/prajeshElEvEn#5948</span>
                             </a>
                         </div>
                     </div>
