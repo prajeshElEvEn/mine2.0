@@ -24,7 +24,7 @@ const RegisterPage = () => {
                     uid: userCredential.user.uid,
                 }))
                 toast.success('Logged In successfully!')
-                nav('/works')
+                nav('/mine2.0/works')
             })
             .catch((error) => {
                 toast.error(error.message)
@@ -44,7 +44,7 @@ const RegisterPage = () => {
                     uid: userCredential.user.uid,
                 }))
                 toast.success('Account created successfully!')
-                nav('/works')
+                nav('/mine2.0/works')
             })
             .catch((error) => {
                 toast.error(error.message)

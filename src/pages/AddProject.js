@@ -45,7 +45,7 @@ const AddProject = () => {
 
     const handleBack = (e) => {
         e.preventDefault()
-        nav('/works')
+        nav('/mine2.0/works')
     }
 
     return (

@@ -37,12 +37,12 @@ function App() {
     <>
       <HomeNav />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/works" element={<WorksPage user={user} />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/add" element={<AddProject />} />
+        <Route path="/mine2.0" element={<HomePage />} />
+        <Route path="/mine2.0/works" element={<WorksPage user={user} />} />
+        <Route path="/mine2.0/about" element={<AboutPage />} />
+        <Route path="/mine2.0/contact" element={<ContactPage />} />
+        <Route path="/mine2.0/register" element={<RegisterPage />} />
+        <Route path="/mine2.0/add" element={<AddProject />} />
       </Routes>
       <ScrollToTop />
       <ToastContainer />
