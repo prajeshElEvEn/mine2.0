@@ -11,6 +11,7 @@ const AddProject = () => {
     const [description, setDescription] = useState('')
     const [image, setImage] = useState(null)
     const [date, setDate] = useState('')
+    const [projectUrl, setProjectUrl] = useState('')
 
     const nav = useNavigate()
     const handleAdd = async (e) => {
@@ -25,11 +26,17 @@ const AddProject = () => {
                             description: description,
                             date: date,
                             image: url,
+                            projectUrl: projectUrl,
                             timestamp: serverTimestamp()
                         })
                     ))
                 setImage(null)
-                // toast.success('Image added successfully!')
+                setTitle('')
+                setDescription('')
+                setDate('')
+                setImage(null)
+                setProjectUrl('')
+                toast.success('Project added successfully!')
             })
             .catch(error => {
                 toast.error(error.message)
@@ -71,6 +78,14 @@ const AddProject = () => {
                         rows={6}
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
+                    />
+                </div>
+                <div className="form-field">
+                    <input
+                        type="url"
+                        placeholder="Project URL"
+                        value={projectUrl}
+                        onChange={(e) => setProjectUrl(e.target.value)}
                     />
                 </div>
                 <div className="btn-group">
