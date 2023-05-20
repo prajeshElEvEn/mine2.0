@@ -175,8 +175,10 @@
 }
 .container-box .container .card-container .card-box .cards {
   display: flex;
+  width: 96%;
   flex-wrap: wrap;
   gap: 2rem;
+  margin: 0 auto;
 }
 
 .card {

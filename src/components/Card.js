@@ -3,13 +3,15 @@ import React from 'react'
 const Card = ({ title, desc, link, image, date }) => {
     return (
         <div className="card">
-            <img src={image} alt="" />
-            <div className="card-body">
-                <div className="title">
-                    {title}
-                </div>
-                <div className="description">
-                    {desc}
+            <div className="card-top">
+                <img src={image} alt="" />
+                <div className="card-body">
+                    <div className="title">
+                        {title}
+                    </div>
+                    <div className="description">
+                        {desc}
+                    </div>
                 </div>
             </div>
             {
