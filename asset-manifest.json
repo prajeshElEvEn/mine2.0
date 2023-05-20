@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mine2.0/static/css/main.8d740199.css",
-    "main.js": "/mine2.0/static/js/main.c3345f63.js",
+    "main.css": "/mine2.0/static/css/main.d53375ec.css",
+    "main.js": "/mine2.0/static/js/main.bcd2f3fb.js",
     "static/media/me.png": "/mine2.0/static/media/me.7b43b89e6df9638826da.png",
     "static/media/hard.png": "/mine2.0/static/media/hard.2f54336da1468788ab0e.png",
     "static/media/developer.png": "/mine2.0/static/media/developer.938382483eda94b140b9.png",
@@ -16,11 +16,11 @@
     "static/media/twitter.svg": "/mine2.0/static/media/twitter.8934c480d3ffdf09874cc9635734d454.svg",
     "static/media/email.svg": "/mine2.0/static/media/email.b58daf0895e10e0a52dc972d6bb47164.svg",
     "static/media/download.svg": "/mine2.0/static/media/download.0801b54de4cef2dfd33daba2bc3223bf.svg",
-    "main.8d740199.css.map": "/mine2.0/static/css/main.8d740199.css.map",
-    "main.c3345f63.js.map": "/mine2.0/static/js/main.c3345f63.js.map"
+    "main.d53375ec.css.map": "/mine2.0/static/css/main.d53375ec.css.map",
+    "main.bcd2f3fb.js.map": "/mine2.0/static/js/main.bcd2f3fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d740199.css",
-    "static/js/main.c3345f63.js"
+    "static/css/main.d53375ec.css",
+    "static/js/main.bcd2f3fb.js"
   ]
 }
